@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 
-class Home extends Component {
-  render() {
-    return (
-      <h1>
-        Hello World
-      </h1>
-    )
-  }
-}
+import Form from 'components/Form/Form';
+
+const Home = () => {
+  return (
+    <main>
+      <Form />
+    </main>
+  )
+};
 
 export default Home;
