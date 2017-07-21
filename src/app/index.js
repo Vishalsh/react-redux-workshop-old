@@ -1,3 +1,9 @@
-const index = () => {};
+import React from 'react';
+import {render} from 'react-dom';
 
-export default index;
+import Home from 'components/Home/Home';
+
+render(
+<Home />,
+  document.getElementById('index')
+);
