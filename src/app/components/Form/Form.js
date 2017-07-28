@@ -18,7 +18,16 @@ class Form extends Component {
     });
   }
 
+  componentWillMount() {
+    console.log('Form Component Will Mount');
+  }
+
+  componentDidMount() {
+    console.log('Form Component Did Mount');
+  }
+
   render() {
+    console.log('Form Component is rendering');
     return (
       <section>
         <input
