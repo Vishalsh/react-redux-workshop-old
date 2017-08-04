@@ -1,9 +1,14 @@
 import React from 'react';
 import {render} from 'react-dom';
+import {Provider} from 'react-redux';
 
-import Home from 'components/Home/Home';
+import Home from 'components/Home';
+
+import store from './store';
 
 render(
-  <Home />,
+  <Provider store={ store }>
+    <Home/>
+  </Provider>,
   document.getElementById('index')
 );
