@@ -7,13 +7,14 @@ class User extends Component {
   }
 
   onChange() {
-
+    this.props.updateName(this.inputName.value)
   }
 
   render() {
     return (
       <section>
         <input
+          placeholder="Name"
           ref={(input) => this.inputName = input}
           onChange={this.onChange}/>
       </section>
