@@ -1,13 +1,11 @@
 const userInitialState = {
-  user: {
-    name: ''
-  }
+  name: ''
 };
 
 const userReducer = (state = userInitialState, action) => {
   switch (action.type) {
     case 'UPDATE_NAME':
-      return {...state.user, name: action.name};
+      return {...state, name: action.name};
     default:
       return userInitialState;
   }
